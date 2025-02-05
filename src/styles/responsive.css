@@ -1,0 +1,355 @@
+/* Responsive navbar menu */
+@media only screen and (max-width: 600px) {
+    #menuIcon {
+        display: block;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        background-color: #F0A04B; 
+    }
+    #drawer.open {
+        display: flex;
+        margin-top: 12px;
+    }
+    #drawer li a {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* Responsive styles for umkm list */
+@media only screen and (max-width: 600px) {
+    #umkm-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .umkm-card {
+        margin: 0.5rem auto;
+        max-width: 100%;
+    }
+}
+
+/* Responsive styles for recommendation cards */
+@media only screen and (max-width: 600px) {
+    .rekom-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .card-item, .card-rekom {
+        margin: 0.5rem auto;
+        max-width: 100%;
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar-menu {
+        display: flex;
+        justify-content: center; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    
+    .navbar-menu li {
+        padding: 0 10px; 
+    }
+    
+    #umkm-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .umkm-card {
+        margin: 1rem;
+    }
+    .rekom-card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .card-item, .card-rekom {
+        margin: 1rem;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+    .navbar-menu {
+        display: flex; 
+        justify-content: center; 
+        list-style: none; 
+        padding: 0; 
+        margin: 0; 
+    }
+    
+    .navbar-menu li {
+        padding: 0 10px; 
+    }
+    #umkm-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .umkm-card {
+        margin: 1rem;
+    }
+    .rekom-card {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .card-item, .card-rekom {
+        margin: 1rem;
+    }
+}
+
+/* Common styling for card items and recommendation cards */
+.card-item, .card-rekom {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card-item:hover, .card-rekom:hover {
+    transform: scale(1.05);
+}
+
+.card-item img.article-image, .card-rekom img.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-item h1, .card-rekom h1 {
+    font-size: 1.5em;
+    margin: 16px;
+    color: #333;
+}
+
+.card-item p, .card-rekom p {
+    font-size: 1em;
+    margin: 0 16px 16px;
+    color: #666;
+}
+
+/* Responsive styles for Madura image on mobile */
+@media only screen and (max-width: 600px) {
+    .madura-image-container {
+        grid-column: 1 / -1; 
+    }
+  
+    .madura-image {
+        width: 100%; 
+        max-width: none; 
+        height: auto;
+    }
+}
+
+/* Responsive styles for intro text */
+@media only screen and (max-width: 600px) {
+    .intro-container {
+        display: block; 
+    }
+
+    .intro-text {
+        text-align: center; 
+    }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .team-group {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
+/* Medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .team-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .madura-image-container {
+        grid-column: 1 / -1; 
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1025px) {
+    .team-group {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 1200px) {
+    .heroTitle {
+        font-size: 2.2em;
+    }
+    .heroTagline {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 992px) {
+    .heroTitle {
+        font-size: 2em;
+    }
+    .heroTagline {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 300px;
+        padding: 300px;
+    }
+    .heroTitle {
+        font-size: 1.8em;
+    }
+    .heroTagline {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: 250px;
+        padding: 10px;
+    }
+    .heroTitle {
+        font-size: 1.5em;
+    }
+    .heroTagline {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .search-container {
+      width: 100%; 
+      max-width: 1000px; 
+      margin: 0 auto; 
+      margin-bottom: 15px;
+    }
+
+    .umkm-info  {
+        width: 95%;
+        margin-top: -10px; 
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    #search-input {
+      width: 100%; 
+      max-width: 1000px; 
+    }
+  
+    #search-button {
+      padding: 10px 20px; 
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .search-container {
+      width: 90%; 
+      margin: 0 auto; 
+    }
+
+    .umkm-info h2 {
+        font-size: 25px;
+        width: 95%;
+        margin: 0 auto; 
+        display: block;
+        margin-top: -10px; 
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+  
+    #search-input {
+      width: 100%; 
+      max-width: 400px; 
+    }
+  
+    #search-button {
+      padding: 8px 16px; 
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 1024px) { /* Untuk layar desktop */
+    .umkm-detail img,
+    .detail-content p {
+        width: 100%;  /* Pastikan lebar sama */
+        max-width: 600px; /* Samakan ukuran maksimum */
+        margin: 0 auto; /* Posisikan ke tengah */
+    }
+
+    .detail-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding-top: 0px;
+    }
+}
+
+/* Untuk layar mobile dan tablet */
+@media (max-width: 1024px) and (min-width: 768px) { /* Tablet */
+    .umkm-detail img,
+    .detail-content p {
+        width: 90%;  /* Lebar 90% dari layar */
+        max-width: none; /* Hilangkan batasan lebar maksimum */
+        margin: 0 auto; /* Posisikan ke tengah */
+    }
+
+    .detail-content {
+        display: block; /* Menyusun konten secara vertikal */
+        text-align: left;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 767px) { /* Untuk layar mobile */
+    .umkm-detail img,
+    .detail-content p {
+        width: 90%;  /* Lebar 90% dari layar */
+        max-width: none; /* Hilangkan batasan lebar maksimum */
+        margin: 0 auto; /* Posisikan ke tengah */
+    }
+
+    .detail-content {
+        display: block; /* Menyusun konten secara vertikal */
+        text-align: left;
+        padding-top: 10px;
+    }
+}
+
+/* Responsif untuk layar tablet */
+@media (max-width: 1024px) {
+    .description p {
+        font-size: 18px;  /* Mengurangi ukuran font sedikit untuk tablet */
+        width: 85%; /* Menyesuaikan lebar menjadi 85% untuk layar tablet */
+    }
+}
+
+/* Responsif untuk layar mobile */
+@media (max-width: 767px) {
+    .description p {
+        font-size: 16px;  /* Mengurangi ukuran font lebih kecil untuk layar mobile */
+        margin-bottom: 8px;  /* Mengurangi margin bawah */
+        padding-bottom: 8px; /* Mengurangi padding bawah */
+        width: 70%; /* Lebar menjadi 90% agar tidak terlalu lebar */
+    }
+}
