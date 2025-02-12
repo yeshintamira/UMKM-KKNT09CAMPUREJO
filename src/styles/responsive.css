@@ -15,7 +15,7 @@
     }
     #drawer.open {
         display: flex;
-        margin-top: 12px;
+        margin-top: 20px;
     }
     #drawer li a {
         display: block;
@@ -186,7 +186,12 @@
         grid-template-columns: repeat(3, 1fr); 
     }
 }
-
+@media (min-width: 1024px) {
+    .hero {
+        min-height: 80vh;
+        margin-top: 60px;
+    }
+}
 
 /* Media Queries untuk responsivitas */
 @media (max-width: 1200px) {

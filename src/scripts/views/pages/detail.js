@@ -14,20 +14,26 @@ const Detail = {
     }
 
     return `
-      <main class="detail-container" id="maincontent" tabindex="0">
-        <div class="umkm-detail">
-          <h2 tabindex="0">${umkmItem.name}</h2>
-          <img src="${umkmItem.pictureId}" alt="${umkmItem.name}" tabindex="0">
-          <div class="detail-content" tabindex="0">
+     <main class="detail-container" id="maincontent" tabindex="0">
+    <div class="umkm-detail">
+        <h2 tabindex="0">${umkmItem.name}</h2>
+        <img src="${umkmItem.pictureId}" alt="${umkmItem.name}" tabindex="0">
+        <div class="detail-content" tabindex="0">
             <p tabindex="0">${umkmItem.description}</p>
             <p tabindex="0"><strong>Penjual:</strong> ${umkmItem.seller}</p>
             <p tabindex="0"><strong>Harga:</strong> ${umkmItem.price}</p>
-           <p tabindex="0"><strong>Kontak:</strong> 
-  <a href="https://wa.me/${umkmItem.whatsapp.replace(/^0/, '62')}" target="_blank">
-    ${umkmItem.whatsapp}
-  </a>
-</p>
-<p tabindex="0"><strong>Lokasi:</strong> ${umkmItem.location}</p>
+            <p tabindex="0"><strong>Kontak:</strong> 
+                <a href="https://wa.me/${umkmItem.whatsapp.replace(/^0/, '62')}" target="_blank">
+                    ${umkmItem.whatsapp}
+                </a>
+            </p>
+            <p tabindex="0"><strong>Instagram:</strong> ${umkmItem.instagram}</p>
+            <p tabindex="0"><strong>Lokasi:</strong> ${umkmItem.location}</p>
+        </div>
+    </div>
+</main>
+
+
 
           </div>
         </div>

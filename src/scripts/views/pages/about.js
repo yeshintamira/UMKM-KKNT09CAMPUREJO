@@ -21,11 +21,11 @@ const About = {
         <a href="https://www.instagram.com/umkm.campurejo.kediri1" target="_blank">
             <img src="../images/foto-sosial/ig.png" alt="Instagram UMKM">
         </a>
-        <a href="https://www.tiktok.com/@umkm.campurejo.kediri" target="_blank">
-            <img src="../images/foto-sosial/tiktok.png" alt="TikTok UMKM">
-        </a>
         <a href="https://www.facebook.com/share/1E7MnFMoBn/?mibextid=wwXIfr" target="_blank">
             <img src="../images/foto-sosial/facebook.png" alt="Facebook UMKM">
+        </a>
+        <a href="https://www.tiktok.com/@umkm.campurejo.kediri" target="_blank">
+            <img src="../images/foto-sosial/tiktok.png" alt="TikTok UMKM">
         </a>
     </div>
 </div>

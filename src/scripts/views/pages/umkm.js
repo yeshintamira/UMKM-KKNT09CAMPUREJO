@@ -7,8 +7,9 @@ const UMKMs = {
         <img class="umkm-image" src="${item.pictureId}" alt="${item.name}" tabindex="0">
        <div class="card-content">
           <h2 tabindex="0">${item.name}</h2>
-          <p tabindex="0">${item.description.substring(0, 200)}...</p>
-          <p tabindex="0"><strong>Harga:</strong> Rp${item.price}</p>
+          <p tabindex="0">${item.description.substring(0, 250)}...</p>
+          <p tabindex="0"><strong>Penjual:</strong> ${item.seller}</p>
+           <p tabindex="0"><strong>Penjual:</strong> ${item.price}</p>
           <a href="#/detail/${item.id}" class="detail-link" tabindex="0">Lihat Detail</a>
         </div>
       </div>
@@ -64,7 +65,7 @@ const UMKMs = {
           <img class="umkm-image" src="${item.pictureId}" alt="${item.name}" tabindex="0">
           <div class="card-content">
             <h2 tabindex="0">${item.name}</h2>
-            <p tabindex="0">${item.description.substring(0, 120)}...</p>
+            <p tabindex="0">${item.description.substring(0, 200)}...</p>
             <p tabindex="0"><strong>Penjual:</strong> ${item.seller}</p>
             <a href="#/detail/${item.id}" class="detail-link" tabindex="0">Lihat Detail</a>
           </div>
