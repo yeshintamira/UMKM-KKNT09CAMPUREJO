@@ -6,7 +6,7 @@ const About = {
           <h2 tabindex="0">Kelompok KKN-Tematik 09 Campurejo</h2>
           <div class="group">
             <div class="photo-frame">
-              <img class="photo-image" src="../images/foto-kelompok/hero-image.jpg" 
+              <img class="photo-image" src="../images/foto-kelompok/foto-kelompok-kkn.jpg" 
                    alt="Kelompok KKN 09 Campurejo" tabindex="0">
             </div>
             <div class="description">

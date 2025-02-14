@@ -21,13 +21,11 @@ const Detail = {
         <div class="detail-content" tabindex="0">
             <p tabindex="0">${umkmItem.description}</p>
             <p tabindex="0"><strong>Penjual:</strong> ${umkmItem.seller}</p>
-            <p tabindex="0"><strong>Harga:</strong> ${umkmItem.price}</p>
             <p tabindex="0"><strong>Kontak:</strong> 
                 <a href="https://wa.me/${umkmItem.whatsapp.replace(/^0/, '62')}" target="_blank">
                     ${umkmItem.whatsapp}
                 </a>
             </p>
-            <p tabindex="0"><strong>Instagram:</strong> ${umkmItem.instagram}</p>
             <p tabindex="0"><strong>Alamat:</strong> ${umkmItem.location}</p>
         </div>
     </div>

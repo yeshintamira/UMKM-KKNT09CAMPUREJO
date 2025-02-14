@@ -9,7 +9,6 @@ const Home = {
         <h1 tabindex="0">${item.name}</h1>
         <p tabindex="0">${item.description.substring(0, 200)}...</p>
         <p tabindex="0"><strong>Penjual:</strong> ${item.seller}</p>
-        <p tabindex="0"><strong>Harga:</strong> ${item.price}</p>
         <a href="#/detail/${item.id}" class="detail-link" tabindex="0">Lihat Detail</a>
       </div>
     `).join('');
