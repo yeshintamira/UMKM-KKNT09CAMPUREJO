@@ -131,7 +131,7 @@ button, .navbar-menu a, input[type="text"], textarea {
     min-height: calc(100vh - 70px); /* Sesuaikan agar tidak tertutup navbar */
     
     text-align: center;
-    background-image: url('../public/images/heros/hero-image.jpg');
+    background-image: url('../public/images/heros/hero-umkm.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

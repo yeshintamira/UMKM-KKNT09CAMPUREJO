@@ -19,7 +19,7 @@ const Home = {
         <h1 class="intro-title" tabindex="0">Temukan Keunikan Produk Lokal di UMKM CAMPUREJO!</h1>
         <div class="intro" tabindex="0">
           <div class="madura-image-container" tabindex="0">
-            <img src="../images/gambar-budra/suramadu.jpg" alt="Madura" class="madura-image" tabindex="0">
+            <img src="../images/gambar-produk-umkm/umkm.png" alt="Madura" class="madura-image" tabindex="0">
           </div>
         </div>
            <div class="intro-text" tabindex="0">
